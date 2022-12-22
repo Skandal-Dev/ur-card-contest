@@ -1,38 +1,372 @@
-.App {
-  text-align: center;
+body{
+  background-image: url('https://uc5cc75fc34402b126c620a9cb97.previews.dropboxusercontent.com/p/thumb/ABwgpa3xLeEMGkOnT3_v0BG5-ysysdTp9F25EdOMJITnGnB6lFVAGgicfmLGTP7L4m-q84nuSeYv-qaPVuyGf75IdehcSn5SQYfzSLRY6qBNUeaYaW6ZL1KJ6qESMKEowS4IDINYemkP68uG7LMjLeX1Moeba3-wB2D_EKrv7L9WuLWpiLRGH-wWv9-KHQpuHqCp2xsvFRsdx8AoMYo40lGXUrEVvJCkCdkgh5Z-0_5y7u6H_qIID3fxcftu2KyDd-OzTDtFYMd9igSbpz-g534mLda7GVhV-TElZc51Asngq6rxAJU8B6dIqf0jLbI5mCV07pJIcxnwjIATxCZsCVRyTTh-zTUNSk5EXWlDzx0RpBjjp58hvan6BGGATFCsFih0zxsnFlkEZtV2P1bL138c/p.png');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  background: url('https://s.acdn.ur-img.com/img/v3/profile/hud/hud-default.png');
+  width: 514px;
+  height: 228px;
+  position: relative;
+  margin: auto;
+  top: -40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+img{
+      max-width: inherit;
+}
+
+.App{
+  margin-top: -70px !important  ;
+}
+
+.fileContainer{
+  background: #0000 !important;
+}
+
+.button-prism{
+  margin: auto;
+  display: block;
+  margin-top: 5px;
+}
+
+h4{
+    display: block;
+    padding: 19px;
+    width: fit-content;
+    margin: auto;
+    background: #271a46;
+    border-radius: 9px;
+    border: 2px solid #2c2144;
+    position: relative;
+    top: -125px;
+    z-index: -1;
+}
+
+#logo{
+  width: 320px;
+  clear: both;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: -100px;
+}
+
+
+@media screen and (max-width: 1354px) {
+
+
+
+    #editor{
+      flex-direction: column !important;
+      margin: 0 0vw !important;
+      margin-top: 5vw !important;
+    }
+
+
+    .LogoForm {
+      width: 100% !important;
+    }
+
+    .box{
+      transform: scale(1) !important;
+      -webkit-transform: scale(1) !important;
+    }
+
+
+
+    #editor{
+      height: fit-content !important;
+    }
+
+    body{
+      overflow: visible;
+    }
+
+    .card-power,.card-damage{
+      font-size: .9375rem !important;
+      left: 7px !important;
+    }
+
+
+
+    .card-star-off, .card-star-on {
+        width: 12px !important;
+        height: 11.25px !important;
+        vertical-align: top !important;
+        display: inline-block !important;
+    }
+
+
+    .card-name {
+      width: 122px !important;
+      color: #f9f9f6;
+      text-align: center;
+      text-shadow: -1px -1px 0 #00383f,1px -1px 0 #00383f,-1px 1px 0 #00383f,1px 1px 0 #00383f,2px 2px 1px #000 !important;
+      display: inline-block !important;
+      position: absolute !important;
+      top: 14px !important;
+      left: 31px !important;
+      font-size: .75rem !important;
   }
+
+  .card-clan {
+    width: 20px !important;
+  }
+
+  .card-clan-link {
+    position: absolute !important;
+    top: 12px !important;
+    left: 4px !important;
+    z-index: 3 !important;
+  }
+
+ }
+
+.l-height-5{
+  margin-bottom: 20px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.card-bottom {
+  width: 150px !important;
+  height: 89px !important;
+  position: absolute !important;
+  bottom: 7px !important;
+  left: 12px !important;
+  z-index: 4 !important;
+}
+
+
+.card-top {
+	width: 159px !important;
+	height: 37px !important;
+	position: absolute !important;
+	top: 0 !important;
+	left: 7px !important;
+}
+
+
+.card-progress {
+  background: none !important;
+  width: 87px !important;
+  height: 19px !important;
+  position: relative !important;
+  top: 12px !important;
+  left: 29px !important;
+  overflow: visible !important;
+}
+
+.card-power {
+	top: 21px !important;
+}
+
+.card-damage {
+	top: 62px !important;
+}
+
+.card-ability {
+	width: 100px !important;
+	height: 26px !important;
+	margin: 18px 0 0 auto !important;
+	font-size: .6rem !important;
+	line-height: 1.2 !important;
+	text-shadow: 0 0 1px #000 !important;
+}
+
+.card-bonus {
+	width: 100px !important;
+	height: 26px !important;
+	margin: 0 0 0 auto !important;
+	font-size: .6rem !important;
+	line-height: 1.2 !important;
+	text-shadow: 0 0 1px #000 !important;
+}
+
+.card-stars {
+  width: 100% !important;
+  height: 100% !important;
+  padding-top: 3px !important;
+  text-align: center !important;
+  position: absolute !important;
+  top: 0 !important;
+  z-index: 1 !important;
+}
+
+.card-progress .progress-bar {
+  line-height: 8px !important;
+  background-color: transparent !important;
+
+  background-size: auto 100% !important;
+}
+
+
+
+.ur-card {
+  border-radius: 14px !important;
+  width: 168px !important;
+  height: 237px !important;
+  color: #fff !important;
+  text-align: left !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/***************************/
+.ur-card {
+  border-radius: 14px !important;
+  color: #fff !important;
+  height: 237px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  text-align: left !important;
+  width: 168px !important;
+}
+
+
+.card-back-l, .card-m {
+  background-size: contain;
+}
+.ur-card {
+  border-radius: 14px;
+  width: 168px;
+  height: 237px;
+  color: #fff;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+.ur-card {
+  transition: box-shadow .2s ease;
+  transform: translateZ(0);
+  z-index: 10;
+  outline: 1px solid transparent;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+/***************************/
+
+
+.form-box{
+  margin: 10px;
+  background:rgba(226, 222, 222, 0.103);
+  padding: 10px 15px;
+  border-radius: 4px;
+  color:rgb(230, 214, 214) !important;
+  box-shadow: inset 0px 0px 8px #3c3b3b1a;
+
+}
+
+.form-box label{
+  color: hsla(45.1, 40.2%, 49.2%, 0.71) !important;
+  display: block;
+  font-family: Urban Rivals,Arial,Verdana,Sans-serif,Serif;
+  text-shadow: -1px -1px 0 #34003f,1px -1px 0 #34003f,-1px 1px 0 #34003f,1px 1px 0 #34003f,2px 2px 1px #000 !important;
+}
+
+.flex{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.white{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.wrap{
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.LogoForm{
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+
+}
+
+.LogoForm img{
+  width: 32px;
+}
+
+
+#b{
+  position: relative;
+  top: -100px;
+}
+
+.ur-card{
+}
+
+.grid{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+
+
+.box{
+  grid-column: 2;
+  border: 1px solid rgba(228, 209, 209, 0.089);
+  padding: 15px;
+  border-radius: 4px;
+  background: #1a0f38eb;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 5px #1f2629a6;
+  height: 648px;
+}
+
+.l-height-5{
+  line-height: 5px !important;
+  margin-top: 20px;
+  margin-left: 0;
+  margin-bottom: 20px;
+  display: block !important;
+  margin: auto !important;
+  font-size: calc(0.05vw + 12px);
+}
+
+
+#editor{
+  color: rgb(230, 214, 214);
+  font-size: 14px;
+  font-weight: bold;
+  background: #120334;
+  padding: 25px 20px;
+  border-radius: 4px;
+  margin-left: 50px;
+  display: flex;
+  box-shadow: 0px 0px 8px #0b0b0bd1;
+  height: 600px;
+
+}
+
+#editor input,input[type="checkbox"]{
+  border-radius: 4px;
+  background: rgba(29, 29, 29, 0.911);
+  outline: none;
+  color: #e5ddddd1;
+  padding: 0px;
+  margin: 1px;
+}
+
+input[type=text],input[type=number] {
+  background: rgba(95, 139, 152, 0) !important;
+  border: 0px solid #b0828224;
+  border-bottom: 3px solid #97899470;
+  width: 100% !important;
+
+}
+
+#donate-button-container{
+right: 5px;
+bottom: 15px;
+margin: auto 10px;
+  filter: opacity(0.5);
+  position: fixed;
+}
+
+.stroke{
+  text-shadow: -1px -1px 0 #2a9e63,1px -1px 0 #efc2e4a3,-1px 1px 0 #8938d3,1px 1px 0 #f5bb0e,2px 2px 1px #633505 !important;
+
+  text-align: center;
 }
