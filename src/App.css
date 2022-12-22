@@ -12,7 +12,7 @@ body{
 }
 
 img{
-      max-width: inherit;
+      max-width: inherit !important;
 }
 
 .App{
