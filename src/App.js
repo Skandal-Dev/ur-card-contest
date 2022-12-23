@@ -154,7 +154,7 @@ function App() {
           Urban Rivals<br/>
           Card Community Contest
         </div>
-        <div className="App bg-[#16181b] p-4 m-5 rounded-lg border-4 border-[#2b2f35] flex flex-wrap gap-5 justify-evenly justify-items-center">
+        <div className="App spe-box bg-[#16181b] p-4 m-5 rounded-lg border-4 border-[#2b2f35] flex flex-wrap gap-5 justify-evenly justify-items-center">
 
         {cards.map((card) =>
           <Card refference=""

@@ -1,22 +1,42 @@
 body{
-  background-image: url('https://uc5cc75fc34402b126c620a9cb97.previews.dropboxusercontent.com/p/thumb/ABwgpa3xLeEMGkOnT3_v0BG5-ysysdTp9F25EdOMJITnGnB6lFVAGgicfmLGTP7L4m-q84nuSeYv-qaPVuyGf75IdehcSn5SQYfzSLRY6qBNUeaYaW6ZL1KJ6qESMKEowS4IDINYemkP68uG7LMjLeX1Moeba3-wB2D_EKrv7L9WuLWpiLRGH-wWv9-KHQpuHqCp2xsvFRsdx8AoMYo40lGXUrEVvJCkCdkgh5Z-0_5y7u6H_qIID3fxcftu2KyDd-OzTDtFYMd9igSbpz-g534mLda7GVhV-TElZc51Asngq6rxAJU8B6dIqf0jLbI5mCV07pJIcxnwjIATxCZsCVRyTTh-zTUNSk5EXWlDzx0RpBjjp58hvan6BGGATFCsFih0zxsnFlkEZtV2P1bL138c/p.png');
+  background-image: url('bg.png');
 }
 
+
+body{
+  margin: 0;
+  padding: 0;
+}
 .header{
   background: url('https://s.acdn.ur-img.com/img/v3/profile/hud/hud-default.png');
   width: 514px;
   height: 228px;
-  position: relative;
+  position: sticky;
   margin: auto;
-  top: -40px;
+  top: 0px;
+  z-index: 999;
+
+}
+.cards-note{
+  text-align: center;
+transform: scale(1.5);
+margin-top: 10px;
 }
 
+.cards-note img{
+  transition: all 0.5s
+}
+
+.cards-note img:hover{
+  cursor: pointer;
+  transform: scale(1.7)
+}
 img{
-      max-width: inherit !important;
+      max-width: inherit !important ;
 }
 
 .App{
-  margin-top: -70px !important  ;
+  margin-top: -20px !important  ;
 }
 
 .fileContainer{
@@ -27,6 +47,16 @@ img{
   margin: auto;
   display: block;
   margin-top: 5px;
+}
+
+.spe-box{
+  border-radius: 0.75rem;
+outline: 4px solid #000;
+border: 4px solid #2b2f35;
+background-color: #16181b;
+filter: drop-shadow(5px 5px 0 #0000004c);
+color: #fff;
+
 }
 
 h4{

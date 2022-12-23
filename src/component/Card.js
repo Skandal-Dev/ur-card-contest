@@ -69,10 +69,15 @@ class Card extends React.Component{
                         </div>
 
 
+
                     </div>
 
+                  {/*  <div className='cards-note'>
+                      <Stars lvl={this.props.lvl}></Stars>
 
+                    </div>
 
+                    */}
             </div>
 
 
